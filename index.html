@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <link rel="stylesheet"type="text/css"href="css/index.css"/>
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.ico">
+        <link rel="manifest" href="./manifest.json">
+        <title>GameMovies</title>
+    </head>
+    <body id="cuerpo">
+<div id="barrasuper" class="barrasup">
+    <div class="divlogo">
+        <img src="img/realxlogo.png" class="logo"/>
+    </div>
+    <img src="img/pvideogames.png" class="gif">
+    <h1 id="usuario" class="log">Sign IN</h1>
+    <div class="logindiv">
+        <img id="loginimage" src="img/login.png" class="logimg" onclick="poplog()">
+        <img id="loggout" src="img/logoutimg.png" alt="">
+    </div>
+
+    <div class="cintao">
+       
+        <input class="btncintao" type="button" value="Inicio" onclick="framep1.location.href='inicio.html'"/>> 
+        <input class="btncintao" type="button" value="Categorias" onclick="categoria()">
+        <input class="buscartxt" type="text" placeholder="Buscar algo">
+        <input class="btncintao" type="button" value="Buscar" onclick="alert('aun no hay funcion para el boton')">
+    </div>
+</div>
+<div id="popup">
+  
+    <div class="login">
+		<div class="loginpantalla">
+			<div class="apptitulo">
+				<h1>Login</h1>
+			</div>
+
+			<div class="loginformato">
+				<div class="controlgrupo">
+				<input type="text"   placeholder="Usuario" id="login-name">
+				</div>
+
+				<div class="controlgrupo">
+				<input type="password"   placeholder="Contraseña" id="login-pass">
+				</div>
+
+				<input type="button" class="btn" value="Entrar" onclick="alert('aun no hay funcion de login'),logini()">
+				<a class="registro" onclick="registrini()">Crea una cuenta</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div id="popupreg">
+    <div class="login">
+		<div class="loginpantalla">
+			<div class="apptitulo">
+				<h1>Registro facil</h1>
+			</div>
+
+			<div class="loginformato">
+				<div class="controlgrupo">
+				<input type="text"   placeholder="Usuario" id="login-name">
+				</div>
+
+				<div class="controlgrupo">
+				<input type="password"   placeholder="Contraseña" id="login-pass">
+				</div>
+
+				<input type="button" class="btn" value="Registrar" onclick="alert('aun no hay funcion de registro'),logini()">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup2" class="dropdown">
+    <input type="button" href="zombies.html" target="framep1" value="Zombies" onclick="vercat(this.value)"><br>
+    <input type="button" href="comedia.html" target="framep1" value="Comedia" onclick="vercat(this.value)"><br>
+    <input type="button" href="gore.html" target="framep1" value="Gore" onclick="vercat(this.value)"><br>
+    <input type="button" href="accion.html" target="framep1" value="Accion" onclick="vercat(this.value)"><br>
+    <input type="button" value="Atras" onclick="atras()">
+</div>
+<iframe id="frameuno" name="framep1" class="frame" src="inicio.html">
+
+</iframe>
+<script src="./script.js"></script>
+<script src="js/index.js"></script><!--este script es para ver las pantallas del login y 
+    las paginas en los frames cuando veamos el tema de js cambio algunas cosas solo es para ver el diseño de las paginas-->
+
+    </body>
+   </html>

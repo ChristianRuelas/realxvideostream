@@ -1,0 +1,60 @@
+body{
+    
+    background-color: transparent;
+}
+body::-webkit-scrollbar{
+    background:blue;
+    height: 5px;
+    opacity: .5;
+}
+
+body::-webkit-scrollbar-thumb{
+    height: 10px;
+   background-image: url('../img/llanta.png');
+   background-size: contain;    
+}
+.pic{
+   padding: 1vw 1vw 4vw 4vw;
+    background: url('../img/pngoc.png') no-repeat;
+    background-size: contain;
+    width: 18vw;
+    height: 18vw;
+    margin: 4.5vw;
+}
+.pic:hover{
+    width: 20vw;
+    height: 20vw;
+    margin: 3vw;
+}
+.nuevosl{
+    position: relative;
+    width: 30vw;
+    height: 5vw;
+    left: 35vw;
+    border: 2px solid black;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 8px black;
+}
+.categorria{
+
+width: 18vw;
+    height: 18vw;
+    margin: 4.5vw;
+}
+.video{
+    position: relative;
+    left: 20vw;
+    top: 5vw;
+    width: 60vw;
+    height: 30vw;
+}
+.piqi{
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 30vw;
+    height: 40vw;
+    z-index: -1;
+}
+
+
